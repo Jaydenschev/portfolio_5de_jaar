@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+.mulish-uniquifier {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap');
+.libre-barcode-39-regular {
+  font-family: "Libre Barcode 39", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.link {
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+body {
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body h1 {
+    text-align: center;
+}
+
+.body {
+    animation: opstart-body 1s ease backwards;
+}
+
+@keyframes opstart-body {
+    0% {opacity: 0; transform: translateY(-30px);}
+    30% {opacity: 0; transform: translateY(-30px);}
+}
+
+
+section .link {
+    padding: 8px;
+    border: solid white;
+    text-align: center;
+    border-radius: 100px;
+    transition: 100ms;
+    margin: 10px;
+    position: fixed;
+    width: 170px;
+    box-sizing: border-box;
+    z-index: 100;
+    animation: opstart-link 1s ease  backwards;
+}
+
+@keyframes opstart-link {
+    0% {opacity: 0; right: -30px; bottom: -30px;}
+}
+
+
+#home {
+    bottom: 0px;
+    left: 300px;
+}
+
+#skill {
+    bottom: 0px;
+    left: 480px;
+}
+
+#project {
+    bottom: 0px;
+    left: 660px;
+}
+
+#contact {
+    bottom: 0px;
+    left: 840px;
+}
+
+section .link:hover {
+    padding: 10px;
+    font-size: 1.05em;
+    border-width: 6px;
+    border-radius: 10px;
+    animation:  hover-link 2s ease-in-out    alternate infinite; 
+    
+}
+@keyframes hover-link {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(-3deg);}
+    100% {transform: rotate(3deg);}
+
+}
+
+
+
+#copy {
+    position: fixed;
+    bottom: 5px;
+}
